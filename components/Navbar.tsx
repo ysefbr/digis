@@ -35,13 +35,13 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Logo & Brand Title */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative w-11 h-11 rounded-xl overflow-hidden p-0.5 bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/20 group-hover:scale-105 transition-transform duration-200 shrink-0">
-              <div className="w-full h-full bg-[#03213e] rounded-[10px] flex items-center justify-center overflow-hidden">
+              <div className="w-full h-full bg-[#070b1e]/90 rounded-[10px] flex items-center justify-center p-1.5 overflow-hidden">
                 <Image
                   src="/logo.png"
                   alt="DigiSmida Logo"
-                  width={44}
-                  height={44}
-                  className="w-full h-full object-cover"
+                  width={36}
+                  height={36}
+                  className="w-full h-full object-contain drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]"
                   priority
                 />
               </div>
