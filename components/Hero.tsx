@@ -34,17 +34,17 @@ export const Hero: React.FC<HeroProps> = ({
     <section className="relative pt-8 pb-20 md:pt-14 md:pb-28 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
+
           {/* Left Column: Value Proposition & Copy */}
           <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
-            
+
             {/* Scarcity / Trust Tag */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs sm:text-sm font-semibold shadow-inner">
               <span className="flex h-2 w-2 relative">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
               </span>
-              <span>Official Google One: Google AI Pro (18 Months Plan)</span>
+              {/*<span>Official Google One: Google AI Pro (18 Months Plan)</span>*/}
             </div>
 
             {/* Main Headline */}
@@ -132,13 +132,13 @@ export const Hero: React.FC<HeroProps> = ({
 
           {/* Right Column: Holographic Animated GIF Showcase */}
           <div className="lg:col-span-5 relative w-full max-w-full">
-            
+
             {/* Futuristic glowing backdrop */}
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 via-purple-600/30 to-pink-600/30 rounded-3xl blur-2xl transform -rotate-1 scale-95 opacity-70"></div>
-            
+
             {/* Glass Container */}
             <div className="relative glass-panel rounded-3xl p-3 sm:p-4 border border-blue-500/40 shadow-2xl overflow-hidden">
-              
+
               {/* Header HUD Bar */}
               <div className="flex items-center justify-between px-3 py-2 bg-slate-950/80 rounded-xl mb-3 border border-slate-800">
                 <div className="flex items-center gap-2">
