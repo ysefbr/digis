@@ -41,13 +41,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth w-full overflow-x-hidden">
-      <body className="bg-[#050714] text-slate-100 antialiased min-h-screen flex flex-col relative selection:bg-purple-600 selection:text-white pb-20 md:pb-0 w-full overflow-x-hidden">
-        {/* Background ambient glowing orbs contained strictly within viewport */}
-        <div className="fixed inset-0 overflow-hidden pointer-events-none z-0 max-w-full">
-          <div className="cosmic-orb-1"></div>
-          <div className="cosmic-orb-2"></div>
-          <div className="cosmic-orb-3"></div>
+      <body className="bg-[#020617] text-slate-100 antialiased min-h-screen flex flex-col relative selection:bg-blue-600 selection:text-white pb-20 md:pb-0 w-full overflow-x-hidden">
+        {/* Fixed Background Gradient Image from bg.jpg */}
+        <div className="fixed inset-0 w-full h-full -z-50 pointer-events-none overflow-hidden select-none">
+          <img
+            src="/bg.webp"
+            alt="Dynamic Gradient Background"
+            className="w-full h-full object-cover object-top fixed inset-0"
+          />
         </div>
+
         <main className="flex-grow relative z-10 w-full overflow-x-hidden">{children}</main>
       </body>
     </html>

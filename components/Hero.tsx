@@ -39,32 +39,32 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-950 leading-[1.15]">
               Get <span className="gemini-gradient-text">Google AI Pro</span> For 18 Months on Your Own Account
             </h1>
 
             {/* Sub-headline */}
-            <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-              Activate the official <strong className="text-white">Google AI Pro</strong> plan directly on your personal Google email with a single official link. Includes <strong className="text-white">Gemini Advanced (4x higher limits)</strong>, <strong className="text-white">Deep Research & Agentic AI</strong>, <strong className="text-white">5TB Google One Cloud Storage</strong>, <strong className="text-white">Google Vids & Workspace AI</strong>, and <strong className="text-white">Creative Studio Flow credits</strong>.
+            <p className="text-base sm:text-lg text-slate-800 max-w-2xl leading-relaxed font-medium">
+              Activate the official <strong className="text-slate-950 font-bold">Google AI Pro</strong> plan directly on your personal Google email with a single official link. Includes <strong className="text-slate-950 font-bold">Gemini Advanced (4x higher limits)</strong>, <strong className="text-slate-950 font-bold">Deep Research & Agentic AI</strong>, <strong className="text-slate-950 font-bold">5TB Google One Cloud Storage</strong>, <strong className="text-slate-950 font-bold">Google Vids & Workspace AI</strong>, and <strong className="text-slate-950 font-bold">Creative Studio Flow credits</strong>.
             </p>
 
             {/* Quick Benefits Bullet Points */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-xl text-sm text-slate-200">
-              <div className="flex items-center gap-2.5 bg-slate-900/60 border border-slate-800 p-2.5 rounded-xl">
-                <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
-                <span>Gemini Advanced (4x Higher Limits)</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-xl text-sm text-slate-800">
+              <div className="flex items-center gap-2.5 bg-white/80 border border-slate-200/90 p-2.5 rounded-xl shadow-sm backdrop-blur-md font-semibold">
+                <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
+                <span>Gemini Advanced (4x Limits)</span>
               </div>
-              <div className="flex items-center gap-2.5 bg-slate-900/60 border border-slate-800 p-2.5 rounded-xl">
-                <HardDrive className="w-5 h-5 text-blue-400 shrink-0" />
-                <span>5TB Google One Storage + Backup</span>
+              <div className="flex items-center gap-2.5 bg-white/80 border border-slate-200/90 p-2.5 rounded-xl shadow-sm backdrop-blur-md font-semibold">
+                <HardDrive className="w-5 h-5 text-blue-600 shrink-0" />
+                <span>5TB Google One Storage</span>
               </div>
-              <div className="flex items-center gap-2.5 bg-slate-900/60 border border-slate-800 p-2.5 rounded-xl">
-                <Cpu className="w-5 h-5 text-purple-400 shrink-0" />
+              <div className="flex items-center gap-2.5 bg-white/80 border border-slate-200/90 p-2.5 rounded-xl shadow-sm backdrop-blur-md font-semibold">
+                <Cpu className="w-5 h-5 text-purple-600 shrink-0" />
                 <span>Deep Research & 2M Context</span>
               </div>
-              <div className="flex items-center gap-2.5 bg-slate-900/60 border border-slate-800 p-2.5 rounded-xl">
-                <ShieldCheck className="w-5 h-5 text-pink-400 shrink-0" />
-                <span>Google Vids & Workspace Integration</span>
+              <div className="flex items-center gap-2.5 bg-white/80 border border-slate-200/90 p-2.5 rounded-xl shadow-sm backdrop-blur-md font-semibold">
+                <ShieldCheck className="w-5 h-5 text-pink-600 shrink-0" />
+                <span>Google Vids & Workspace AI</span>
               </div>
             </div>
 

@@ -18,8 +18,19 @@ export const Navbar: React.FC<NavbarProps> = ({
   price,
   announcementText = '⚡ Exclusive 18-Month Activation Codes • 88% OFF • Instant Delivery',
 }) => {
+  const [isScrolled, setIsScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 80);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-40 w-full">
+    <header className="sticky top-0 z-40 w-full transition-all duration-300">
       {/* Top Scarcity / Promo Banner */}
       <div className="bg-gradient-to-r from-blue-700 via-purple-700 to-pink-600 py-1.5 px-4 text-center text-xs md:text-sm font-medium text-white shadow-md flex items-center justify-center gap-2">
         <Sparkles className="w-4 h-4 animate-pulse text-yellow-300" />
@@ -29,8 +40,14 @@ export const Navbar: React.FC<NavbarProps> = ({
         </span>
       </div>
 
-      {/* Main Navigation Bar */}
-      <div className="border-b border-blue-900/40 bg-[#050714]/80 backdrop-blur-xl">
+      {/* Main Navigation Bar - Adaptable Background & Text Colors */}
+      <div
+        className={`transition-all duration-300 ${
+          isScrolled
+            ? 'border-b border-blue-900/40 bg-[#050714]/90 backdrop-blur-xl shadow-2xl'
+            : 'border-b border-slate-300/40 bg-white/70 backdrop-blur-xl shadow-sm'
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           {/* Logo & Brand Title */}
           <Link href="/" className="flex items-center gap-3 group">
@@ -48,22 +65,78 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
-                <span className="font-bold text-lg md:text-xl text-white tracking-tight">Google AI Pro</span>
-                <span className="bg-blue-500/20 text-blue-400 text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded border border-blue-500/30">18M</span>
+                <span
+                  className={`font-bold text-lg md:text-xl tracking-tight transition-colors duration-300 ${
+                    isScrolled ? 'text-white' : 'text-slate-900'
+                  }`}
+                >
+                  Google AI Pro
+                </span>
+                <span
+                  className={`text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded border transition-colors duration-300 ${
+                    isScrolled
+                      ? 'bg-blue-500/20 text-blue-400 border-blue-500/30'
+                      : 'bg-blue-100 text-blue-700 border-blue-300'
+                  }`}
+                >
+                  18M
+                </span>
               </div>
-              <span className="text-[11px] text-slate-400 hidden sm:block">Official Google One Activation</span>
+              <span
+                className={`text-[11px] hidden sm:block transition-colors duration-300 ${
+                  isScrolled ? 'text-slate-400' : 'text-slate-600 font-medium'
+                }`}
+              >
+                Official Google One Activation
+              </span>
             </div>
           </Link>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
-            <a href="#features" className="hover:text-blue-400 transition-colors">Features</a>
-            <a href="#comparison" className="hover:text-blue-400 transition-colors">Comparison</a>
-            <a href="#how-it-works" className="hover:text-blue-400 transition-colors">How It Works</a>
-            <a href="#faq" className="hover:text-blue-400 transition-colors">FAQ</a>
+          <nav
+            className={`hidden md:flex items-center gap-7 text-sm font-medium transition-colors duration-300 ${
+              isScrolled ? 'text-slate-300' : 'text-slate-800 font-semibold'
+            }`}
+          >
+            <a
+              href="#features"
+              className={`transition-colors ${
+                isScrolled ? 'hover:text-blue-400' : 'hover:text-blue-600'
+              }`}
+            >
+              Features
+            </a>
+            <a
+              href="#comparison"
+              className={`transition-colors ${
+                isScrolled ? 'hover:text-blue-400' : 'hover:text-blue-600'
+              }`}
+            >
+              Comparison
+            </a>
+            <a
+              href="#how-it-works"
+              className={`transition-colors ${
+                isScrolled ? 'hover:text-blue-400' : 'hover:text-blue-600'
+              }`}
+            >
+              How It Works
+            </a>
+            <a
+              href="#faq"
+              className={`transition-colors ${
+                isScrolled ? 'hover:text-blue-400' : 'hover:text-blue-600'
+              }`}
+            >
+              FAQ
+            </a>
             <button
               onClick={onOpenLookup}
-              className="flex items-center gap-1.5 text-purple-400 hover:text-purple-300 transition-colors cursor-pointer"
+              className={`flex items-center gap-1.5 transition-colors cursor-pointer ${
+                isScrolled
+                  ? 'text-purple-400 hover:text-purple-300'
+                  : 'text-purple-700 hover:text-purple-900 font-bold'
+              }`}
             >
               <Search className="w-3.5 h-3.5" />
               <span>Track Order</span>
@@ -74,7 +147,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center gap-3">
             <button
               onClick={onOpenLookup}
-              className="md:hidden p-2 rounded-lg bg-slate-800/80 border border-slate-700 text-purple-400 hover:text-purple-300"
+              className={`md:hidden p-2 rounded-lg border transition-colors ${
+                isScrolled
+                  ? 'bg-slate-800/80 border-slate-700 text-purple-400'
+                  : 'bg-white/90 border-slate-300 text-purple-700 shadow-sm'
+              }`}
               title="Track Order"
             >
               <Search className="w-4 h-4" />
