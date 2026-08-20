@@ -30,7 +30,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 w-full transition-all duration-300">
+    <header className="sticky top-0 z-40 w-full transition-all duration-300 opacity-90">
       {/* Top Scarcity / Promo Banner */}
       <div className="bg-gradient-to-r from-blue-700 via-purple-700 to-pink-600 py-1.5 px-4 text-center text-xs md:text-sm font-medium text-white shadow-md flex items-center justify-center gap-2">
         <Sparkles className="w-4 h-4 animate-pulse text-yellow-300" />
