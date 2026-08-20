@@ -39,12 +39,14 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
 
             {/* Scarcity / Trust Tag */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs sm:text-sm font-semibold shadow-inner">
+            <div className="gemini-badge group cursor-default shadow-lg">
               <span className="flex h-2 w-2 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400 shadow-sm shadow-emerald-400"></span>
               </span>
-              {/*<span>Official Google One: Google AI Pro (18 Months Plan)</span>*/}
+              <span className="text-slate-200 group-hover:text-white transition-colors text-xs sm:text-sm">
+                Official Google One: <strong className="text-blue-400 font-bold">Google AI Pro (18 Months Plan)</strong>
+              </span>
             </div>
 
             {/* Main Headline */}

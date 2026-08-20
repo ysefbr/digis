@@ -67,9 +67,9 @@ export const OrderLookupModal: React.FC<OrderLookupModalProps> = ({ isOpen, onCl
 
         {/* Modal Header */}
         <div className="mb-6">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-bold uppercase tracking-wider mb-2">
-            <Search className="w-3.5 h-3.5" />
-            Order Tracking & Vault
+          <div className="gemini-badge uppercase tracking-wider mb-2">
+            <Search className="w-3.5 h-3.5 text-purple-400" />
+            <span>Order Tracking & Vault</span>
           </div>
           <h3 className="text-2xl font-extrabold text-white">
             Find Your Activation Link

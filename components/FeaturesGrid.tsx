@@ -82,9 +82,9 @@ export const FeaturesGrid: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-bold uppercase tracking-wider mb-4">
-            <Sparkles className="w-3.5 h-3.5" />
-            Official Google AI Pro Plan Suite
+          <div className="gemini-badge uppercase tracking-wider mb-4">
+            <Sparkles className="w-3.5 h-3.5 text-blue-400 animate-pulse" />
+            <span>Official Google AI Pro Plan Suite</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Everything Included in Your 18-Month Google AI Pro Plan

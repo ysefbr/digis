@@ -38,9 +38,9 @@ export const FaqSection: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-wider mb-3">
-            <HelpCircle className="w-3.5 h-3.5" />
-            Frequently Asked Questions
+          <div className="gemini-badge uppercase tracking-wider mb-3">
+            <HelpCircle className="w-3.5 h-3.5 text-blue-400" />
+            <span>Frequently Asked Questions</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
             Everything You Need to Know
