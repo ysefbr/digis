@@ -6,7 +6,6 @@ import { Hero } from '@/components/Hero';
 import { FeaturesGrid } from '@/components/FeaturesGrid';
 import { ComparisonTable } from '@/components/ComparisonTable';
 import { HowItWorks } from '@/components/HowItWorks';
-import { ReviewsSection } from '@/components/ReviewsSection';
 import { FaqSection } from '@/components/FaqSection';
 import { Footer } from '@/components/Footer';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
@@ -63,8 +62,6 @@ export default function HomePage() {
         />
 
         <HowItWorks />
-
-        <ReviewsSection />
 
         <FaqSection />
       </main>
