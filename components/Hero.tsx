@@ -39,8 +39,8 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-950 leading-[1.15]">
-              Get <span className="gemini-gradient-text">Google AI Pro</span> For 18 Months on Your Own Account
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-slate-950">
+              Get <span className="gemini-gradient-text drop-shadow-sm">Google AI Pro</span> For 18 Months on Your Own Account
             </h1>
 
             {/* Sub-headline */}

@@ -82,10 +82,11 @@ export const FeaturesGrid: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Everything Included in Your 18-Month Google AI Pro Plan
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+            <span className="title-gradient-features drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)]">Everything Included in Your</span>{' '}
+            <span className="bg-gradient-to-r from-blue-200 via-indigo-200 to-pink-200 bg-clip-text text-transparent drop-shadow-md">18-Month Google AI Pro Plan</span>
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-300">
+          <p className="mt-4 text-base sm:text-lg text-blue-100 font-medium drop-shadow-sm">
             The ultimate Google One AI subscription: 4x higher Gemini usage limits, Deep Research, 5TB storage, Google Workspace AI, Google Vids, and Creative Studio credits.
           </p>
         </div>

@@ -38,10 +38,11 @@ export const FaqSection: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-            Everything You Need to Know
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+            <span className="title-gradient-faq drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">Everything You</span>{' '}
+            <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-300 bg-clip-text text-transparent drop-shadow-md">Need to Know</span>
           </h2>
-          <p className="mt-3 text-slate-300 text-sm sm:text-base">
+          <p className="mt-3 text-slate-300 text-sm sm:text-base font-medium">
             Have questions before ordering? Here are clear answers to the most common inquiries.
           </p>
         </div>

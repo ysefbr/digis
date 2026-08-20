@@ -46,7 +46,37 @@ body {
 }
 
 .gemini-gradient-text {
-  background: linear-gradient(135deg, #60A5FA 0%, #A78BFA 45%, #F472B6 100%);
+  background: linear-gradient(135deg, #2563EB 0%, #7C3AED 50%, #DB2777 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-gradient-hero {
+  background: linear-gradient(135deg, #030712 0%, #1e3a8a 50%, #4338ca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-gradient-features {
+  background: linear-gradient(135deg, #ffffff 0%, #bae6fd 60%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-gradient-comparison {
+  background: linear-gradient(135deg, #ffffff 0%, #fde047 50%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-gradient-howitworks {
+  background: linear-gradient(135deg, #ffffff 0%, #f472b6 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-gradient-faq {
+  background: linear-gradient(135deg, #ffffff 0%, #38bdf8 50%, #818cf8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

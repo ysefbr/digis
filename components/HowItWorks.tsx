@@ -30,10 +30,12 @@ export const HowItWorks: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            How The 18-Month Activation Works
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+            <span className="title-gradient-howitworks drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">How The</span>{' '}
+            <span className="bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 bg-clip-text text-transparent drop-shadow-md">18-Month Activation</span>{' '}
+            <span className="title-gradient-howitworks">Works</span>
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-300">
+          <p className="mt-4 text-base sm:text-lg text-slate-300 font-medium">
             Zero complicated setups. You don&apos;t need to share your Google password or create proxy accounts.
           </p>
         </div>
