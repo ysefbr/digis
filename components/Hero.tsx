@@ -115,15 +115,15 @@ export const Hero: React.FC<HeroProps> = ({
               </div>
 
               {/* Reassurance footer */}
-              <div className="mt-3 flex items-center justify-between text-[11px] text-slate-400">
-                <span className="flex items-center gap-1">
-                  <Clock className="w-3.5 h-3.5 text-blue-400" /> Fast WhatsApp Delivery
+              <div className="mt-3.5 grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] text-slate-300">
+                <span className="flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-blue-400 shrink-0" /> Fast WhatsApp Delivery
                 </span>
-                <span className="flex items-center gap-1">
-                  <Gift className="w-3.5 h-3.5 text-pink-400" /> Works on Personal Google Accounts
+                <span className="flex items-center gap-1.5">
+                  <Gift className="w-3.5 h-3.5 text-pink-400 shrink-0" /> Personal Account Link
                 </span>
-                <span className="flex items-center gap-1">
-                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> No Password Needed
+                <span className="flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" /> Zero Risk • 18M Warranty
                 </span>
               </div>
             </div>

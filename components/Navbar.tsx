@@ -82,10 +82,11 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             <button
               onClick={onOpenCheckout}
-              className="gemini-btn-primary flex items-center gap-2 px-4 sm:px-6 py-2.5 rounded-xl font-bold text-sm text-white shadow-lg cursor-pointer"
+              className="gemini-btn-primary flex items-center gap-1.5 sm:gap-2 px-3 sm:px-6 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm text-white shadow-lg cursor-pointer"
             >
-              <Zap className="w-4 h-4 fill-current text-yellow-300" />
-              <span>Buy Now ({price} TND)</span>
+              <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current text-yellow-300" />
+              <span>Buy Now</span>
+              <span className="hidden sm:inline">({price} TND)</span>
             </button>
 
             <Link

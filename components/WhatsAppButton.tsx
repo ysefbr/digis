@@ -16,7 +16,7 @@ export const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
   const waUrl = `https://wa.me/${cleanNumber}?text=${encodeURIComponent(defaultMessage)}`;
 
   return (
-    <aside aria-label="WhatsApp Support" className="fixed bottom-6 right-6 z-40 flex items-center gap-3">
+    <aside aria-label="WhatsApp Support" className="fixed bottom-20 md:bottom-6 right-4 sm:right-6 z-40 flex items-center gap-3">
       <span className="hidden sm:block bg-slate-900/90 text-white text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-700 shadow-xl backdrop-blur-md">
         Need help? Chat with us 👋
       </span>

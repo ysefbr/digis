@@ -1,5 +1,12 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: '#050714',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
@@ -24,11 +31,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth">
-      <body className="bg-[#050714] text-slate-100 antialiased min-h-screen flex flex-col relative selection:bg-purple-600 selection:text-white">
+      <body className="bg-[#050714] text-slate-100 antialiased min-h-screen flex flex-col relative selection:bg-purple-600 selection:text-white pb-20 md:pb-0 overflow-x-hidden">
         <div className="cosmic-orb-1"></div>
         <div className="cosmic-orb-2"></div>
         <div className="cosmic-orb-3"></div>
-        <main className="flex-grow relative z-10">{children}</main>
+        <main className="flex-grow relative z-10 w-full overflow-x-hidden">{children}</main>
       </body>
     </html>
   );

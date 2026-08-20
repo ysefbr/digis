@@ -54,8 +54,8 @@ export const OrderLookupModal: React.FC<OrderLookupModalProps> = ({ isOpen, onCl
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-lg bg-[#0a0f26] border border-blue-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl text-white my-8">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-md overflow-y-auto">
+      <div className="relative w-full max-w-lg max-h-[92vh] overflow-y-auto bg-[#0a0f26] border border-blue-500/30 rounded-3xl p-5 sm:p-8 shadow-2xl text-white my-auto">
         
         {/* Close Button */}
         <button

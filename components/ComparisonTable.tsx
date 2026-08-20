@@ -27,8 +27,13 @@ export const ComparisonTable: React.FC<ComparisonTableProps> = ({ price, onOpenC
           </p>
         </div>
 
+        {/* Mobile Swipe Hint */}
+        <div className="md:hidden flex items-center justify-center gap-2 mb-3 text-xs text-blue-400 font-semibold bg-blue-500/10 py-1.5 px-3 rounded-full border border-blue-500/20 w-fit mx-auto animate-pulse">
+          <span>👉 Swipe horizontally to view full comparison</span>
+        </div>
+
         {/* Comparison Table Container */}
-        <div className="overflow-x-auto rounded-3xl border border-blue-900/40 glass-panel shadow-2xl">
+        <div className="overflow-x-auto rounded-3xl border border-blue-900/40 glass-panel shadow-2xl -mx-2 sm:mx-0">
           <table className="w-full text-left border-collapse min-w-[680px]">
             <thead>
               <tr className="border-b border-slate-800 bg-slate-950/70">
