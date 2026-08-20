@@ -42,13 +42,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth w-full overflow-x-hidden">
       <body className="bg-[#020617] text-slate-100 antialiased min-h-screen flex flex-col relative selection:bg-blue-600 selection:text-white pb-20 md:pb-0 w-full overflow-x-hidden">
-        {/* Fixed Background Gradient Image from bg.jpg */}
+        {/* Fixed Responsive Background Gradient (Full Vertical Spectrum Visible on Desktop and Mobile) */}
         <div className="fixed inset-0 w-full h-full -z-50 pointer-events-none overflow-hidden select-none">
-          <img
-            src="/bg.webp"
-            alt="Dynamic Gradient Background"
-            className="w-full h-full object-cover object-top fixed inset-0"
-          />
+          <picture>
+            <source media="(min-width: 768px)" srcSet="/bg-desktop.webp" />
+            <img
+              src="/bg-mobile.webp"
+              alt="Dynamic Gradient Background"
+              className="w-full h-full object-fill fixed inset-0"
+            />
+          </picture>
         </div>
 
         <main className="flex-grow relative z-10 w-full overflow-x-hidden">{children}</main>
