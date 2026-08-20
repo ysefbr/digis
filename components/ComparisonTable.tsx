@@ -15,10 +15,6 @@ export const ComparisonTable: React.FC<ComparisonTableProps> = ({ price, onOpenC
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="gemini-badge uppercase tracking-wider mb-4">
-            <Sparkles className="w-3.5 h-3.5 text-blue-400 animate-pulse" />
-            <span>Clear Comparison</span>
-          </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             How Does This Offer Compare?
           </h2>

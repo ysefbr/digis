@@ -38,17 +38,6 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Left Column: Value Proposition & Copy */}
           <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
 
-            {/* Scarcity / Trust Tag */}
-            <div className="gemini-badge group cursor-default shadow-lg">
-              <span className="flex h-2 w-2 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400 shadow-sm shadow-emerald-400"></span>
-              </span>
-              <span className="text-slate-200 group-hover:text-white transition-colors text-xs sm:text-sm">
-                Official Google One: <strong className="text-blue-400 font-bold">Google AI Pro (18 Months Plan)</strong>
-              </span>
-            </div>
-
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
               Get <span className="gemini-gradient-text">Google AI Pro</span> For 18 Months on Your Own Account

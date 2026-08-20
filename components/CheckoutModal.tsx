@@ -102,10 +102,6 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
 
         {/* Modal Header */}
         <div className="mb-6">
-          <div className="gemini-badge uppercase tracking-wider mb-2">
-            <Sparkles className="w-3.5 h-3.5 text-blue-400" />
-            <span>Instant Order Form</span>
-          </div>
           <h3 className="text-2xl font-extrabold text-white">
             Google AI Pro 18-Month Activation
           </h3>

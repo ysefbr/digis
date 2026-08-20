@@ -30,10 +30,6 @@ export const HowItWorks: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="gemini-badge uppercase tracking-wider mb-4">
-            <CheckCircle2 className="w-3.5 h-3.5 text-pink-400 animate-pulse" />
-            <span>Simple & Fast Process</span>
-          </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             How The 18-Month Activation Works
           </h2>
