@@ -19,14 +19,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLookup, onOpenCheckout }) 
           {/* Brand Col */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl overflow-hidden p-0.5 bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500">
-                <div className="w-full h-full bg-[#070b1e] rounded-[10px] flex items-center justify-center p-1">
+              <div className="w-10 h-10 rounded-xl overflow-hidden p-0.5 bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 shrink-0">
+                <div className="w-full h-full bg-[#03213e] rounded-[10px] flex items-center justify-center overflow-hidden">
                   <Image
                     src="/logo.png"
                     alt="DigiSmida Logo"
-                    width={32}
-                    height={32}
-                    className="object-contain"
+                    width={38}
+                    height={38}
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>

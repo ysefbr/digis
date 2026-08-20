@@ -42,14 +42,14 @@ export default function AdminLoginPage() {
 
         {/* Brand Header */}
         <div className="text-center mb-8">
-          <div className="w-14 h-14 rounded-2xl overflow-hidden p-0.5 bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 mx-auto mb-4 shadow-lg shadow-purple-500/20">
-            <div className="w-full h-full bg-[#070b1e] rounded-[14px] flex items-center justify-center p-2">
+          <div className="w-16 h-16 rounded-2xl overflow-hidden p-0.5 bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 mx-auto mb-4 shadow-lg shadow-purple-500/20">
+            <div className="w-full h-full bg-[#03213e] rounded-[14px] flex items-center justify-center overflow-hidden">
               <Image
                 src="/logo.png"
                 alt="DigiSmida Logo"
-                width={40}
-                height={40}
-                className="object-contain"
+                width={60}
+                height={60}
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
