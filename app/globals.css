@@ -65,20 +65,8 @@ body {
 }
 
 .dynamic-invert-sub {
-  background: linear-gradient(
-    to bottom,
-    #0a2540 0%,
-    #034a78 22%,
-    #0284c7 42%,
-    #7dd3fc 62%,
-    #e2e8f0 80%,
-    #f8fafc 100%
-  );
-  background-attachment: fixed;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 
 .dynamic-invert-gemini {

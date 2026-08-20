@@ -46,7 +46,7 @@ export const Hero: React.FC<HeroProps> = ({
             </h1>
 
             {/* Sub-headline */}
-            <p className="text-base sm:text-lg max-w-2xl leading-relaxed font-semibold dynamic-invert-sub">
+            <p className="text-base sm:text-lg max-w-2xl leading-relaxed font-medium dynamic-invert-sub">
               Activate the official Google AI Pro plan directly on your personal Google email with a single official link. Includes Gemini Advanced (4x higher limits), Deep Research & Agentic AI, 5TB Google One Cloud Storage, Google Vids & Workspace AI, and Creative Studio Flow credits.
             </p>
 
