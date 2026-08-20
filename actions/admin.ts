@@ -33,7 +33,7 @@ export async function adminLoginAction(password: string): Promise<{ success: boo
 
 export async function adminLogoutAction() {
   await clearAdminSession();
-  revalidatePath('/admin');
+  revalidatePath('/digismeda');
   return { success: true };
 }
 
@@ -148,7 +148,7 @@ export async function updateOrderStatusAction(orderId: string, status: OrderStat
     [status, adminNotes || null, orderId]
   );
 
-  revalidatePath('/admin');
+  revalidatePath('/digismeda');
   return { success: true };
 }
 
@@ -171,7 +171,7 @@ export async function fulfillOrderAction(
     [activationLink.trim(), instructions?.trim() || null, orderId]
   );
 
-  revalidatePath('/admin');
+  revalidatePath('/digismeda');
   return { success: true };
 }
 
@@ -225,7 +225,7 @@ export async function updateStoreSettingsAction(settings: Partial<StoreSettings>
     );
   }
 
-  revalidatePath('/admin');
+  revalidatePath('/digismeda');
   revalidatePath('/');
   return { success: true };
 }
@@ -235,6 +235,6 @@ export async function deleteOrderAction(orderId: string) {
   if (!isAdmin) throw new Error('Unauthorized');
 
   await query(`DELETE FROM gemini_pro_orders WHERE id = $1`, [orderId]);
-  revalidatePath('/admin');
+  revalidatePath('/digismeda');
   return { success: true };
 }

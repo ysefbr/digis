@@ -66,11 +66,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLookup, onOpenCheckout }) 
                   ⚡ Buy 18-Month Activation
                 </button>
               </li>
-              <li>
-                <Link href="/admin" className="hover:text-slate-200 transition-colors">
-                  🛡️ Admin Access
-                </Link>
-              </li>
             </ul>
           </div>
         </div>

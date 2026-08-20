@@ -22,13 +22,13 @@ A high-converting, single-product eCommerce platform built with **Next.js 15 (Ap
 - **Customer Order Tracking & Vault**:
   - Real-time order lookup by Order Code, Phone, or Email.
   - Instant reveal of the official 18-month Google activation link once fulfilled.
-- **Secure Admin Dashboard (`/admin`)**:
-  - Password / JWT Session Protection.
+- **Secure Management Portal (`/digismeda`)**:
+  - Protected by private URL and access password session.
   - Revenue & order analytics (Total Revenue in TND, Total Orders, Pending Deliveries, Delivered Activations).
   - Order management table with status filter, search, and CSV export.
   - Interactive **Fulfill Order** modal to paste the Google activation link.
   - 1-click WhatsApp customer dispatch with pre-filled fulfillment message.
-  - Real-time store settings editor (pricing, stock, WhatsApp support number, announcement banner, admin password).
+  - Real-time store settings editor (pricing, stock, WhatsApp support number, announcement banner, password change).
 
 ---
 
@@ -56,7 +56,7 @@ Create a `.env.local` file:
 ```env
 DATABASE_URL="postgresql://postgres:password@host:port/database"
 ADMIN_SECRET_KEY="your_super_secret_jwt_key"
-ADMIN_DEFAULT_PASSWORD="admin_gemini_2026"
+ADMIN_DEFAULT_PASSWORD="your_admin_password"
 DEFAULT_PRICE_TND="80"
 DEFAULT_ORIGINAL_PRICE_TND="1120"
 DEFAULT_WHATSAPP_NUMBER="+21656000000"
@@ -74,11 +74,11 @@ npm run init-db
 npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) to view the sales page.
-Open [http://localhost:3000/admin](http://localhost:3000/admin) to access the admin dashboard.
+Open [http://localhost:3000/digismeda](http://localhost:3000/digismeda) to access the management portal.
 
 ---
 
-## 🛡️ Admin Portal
+## 🛡️ Management Portal
 
-- **URL**: `/admin`
-- **Default Password**: `admin_gemini_2026`
+- **URL**: `/digismeda`
+- **Access**: Enter your configured password. No admin links exist on the public website.

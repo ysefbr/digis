@@ -21,7 +21,7 @@ export default function AdminLoginPage() {
     try {
       const res = await adminLoginAction(password);
       if (res.success) {
-        router.push('/admin');
+        router.push('/digismeda');
         router.refresh();
       } else {
         setError(res.error || 'Invalid credentials');
@@ -53,7 +53,7 @@ export default function AdminLoginPage() {
               />
             </div>
           </div>
-          <h1 className="text-2xl font-extrabold text-white">Gemini Admin Portal</h1>
+          <h1 className="text-2xl font-extrabold text-white">Management Portal</h1>
           <p className="text-xs text-slate-400 mt-1">Secure dashboard for order fulfillment</p>
         </div>
 
@@ -68,7 +68,7 @@ export default function AdminLoginPage() {
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
             <label className="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
-              Admin Access Password
+              Access Password
             </label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
@@ -78,14 +78,11 @@ export default function AdminLoginPage() {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter password..."
+                placeholder="Enter access password..."
                 required
                 className="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
               />
             </div>
-            <p className="text-[11px] text-slate-500 mt-1.5">
-              Default password is <code className="text-slate-400">admin_gemini_2026</code> (changeable in settings)
-            </p>
           </div>
 
           <button
@@ -98,7 +95,7 @@ export default function AdminLoginPage() {
             ) : (
               <>
                 <ShieldCheck className="w-4 h-4" />
-                <span>Enter Admin Dashboard</span>
+                <span>Enter Dashboard</span>
                 <ArrowRight className="w-4 h-4" />
               </>
             )}

@@ -88,15 +88,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span>Buy Now</span>
               <span className="hidden sm:inline">({price} TND)</span>
             </button>
-
-            <Link
-              href="/admin"
-              className="text-xs text-slate-500 hover:text-slate-400 hidden lg:flex items-center gap-1 p-2 transition-colors"
-              title="Admin Portal"
-            >
-              <ShieldCheck className="w-3.5 h-3.5" />
-              <span>Admin</span>
-            </Link>
           </div>
         </div>
       </div>

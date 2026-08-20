@@ -39,7 +39,7 @@ import {
 } from '@/actions/admin';
 import { GeminiOrder, OrderStatus, StoreSettings, AdminMetrics } from '@/lib/types';
 
-export default function AdminDashboardPage() {
+export default function DigismedaDashboardPage() {
   const router = useRouter();
 
   const [activeTab, setActiveTab] = useState<'orders' | 'settings'>('orders');
@@ -80,7 +80,7 @@ export default function AdminDashboardPage() {
     try {
       const isAuth = await checkIsAdmin();
       if (!isAuth) {
-        router.push('/admin/login');
+        router.push('/digismeda/login');
         return;
       }
 
@@ -90,7 +90,7 @@ export default function AdminDashboardPage() {
       });
 
       if (!data) {
-        router.push('/admin/login');
+        router.push('/digismeda/login');
         return;
       }
 
@@ -125,7 +125,7 @@ export default function AdminDashboardPage() {
 
   const handleLogout = async () => {
     await adminLogoutAction();
-    router.push('/admin/login');
+    router.push('/digismeda/login');
   };
 
   const handleStatusChange = async (orderId: string, newStatus: OrderStatus) => {
@@ -247,7 +247,7 @@ export default function AdminDashboardPage() {
       <div className="min-h-screen bg-[#050714] text-white flex items-center justify-center">
         <div className="flex items-center gap-3 text-sm text-slate-400">
           <RefreshCw className="w-5 h-5 animate-spin text-blue-400" />
-          <span>Loading Gemini Admin Dashboard...</span>
+          <span>Loading Dashboard...</span>
         </div>
       </div>
     );
@@ -275,9 +275,9 @@ export default function AdminDashboardPage() {
               </div>
               <div className="flex flex-col">
                 <div className="flex items-center gap-2">
-                  <span className="font-extrabold text-white text-base">Gemini Admin</span>
+                  <span className="font-extrabold text-white text-base">DigiSmida Portal</span>
                   <span className="bg-purple-500/20 text-purple-300 text-[10px] font-bold px-1.5 py-0.5 rounded border border-purple-500/40">
-                    Live Portal
+                    Live
                   </span>
                 </div>
                 <span className="text-[11px] text-slate-400">Order Management & Fulfillment</span>
@@ -659,7 +659,7 @@ export default function AdminDashboardPage() {
             <div>
               <h3 className="text-xl font-extrabold text-white">Store & Product Configuration</h3>
               <p className="text-xs text-slate-400 mt-1">
-                Customize pricing, remaining stock, WhatsApp support number, and admin credentials.
+                Customize pricing, remaining stock, WhatsApp support number, and access credentials.
               </p>
             </div>
 
@@ -767,7 +767,7 @@ export default function AdminDashboardPage() {
               {/* Change Admin Password */}
               <div className="pt-4 border-t border-slate-800">
                 <label className="block text-xs font-bold uppercase tracking-wider text-pink-400 mb-1">
-                  Change Admin Password (Optional)
+                  Change Access Password (Optional)
                 </label>
                 <input
                   type="password"
