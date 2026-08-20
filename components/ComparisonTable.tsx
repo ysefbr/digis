@@ -16,10 +16,10 @@ export const ComparisonTable: React.FC<ComparisonTableProps> = ({ price, onOpenC
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
-            <span className="title-gradient-comparison drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]">How Does This</span>{' '}
-            <span className="bg-gradient-to-r from-yellow-300 via-amber-200 to-pink-300 bg-clip-text text-transparent drop-shadow-md">Offer Compare?</span>
+            <span className="dynamic-invert-title">How Does This </span>
+            <span className="dynamic-invert-gemini">Offer Compare?</span>
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-blue-100/90 font-medium">
+          <p className="mt-4 text-base sm:text-lg font-medium dynamic-invert-sub">
             See why thousands of developers, researchers, and creators choose our 18-Month Activation link over standard monthly subscriptions.
           </p>
         </div>

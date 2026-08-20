@@ -39,13 +39,15 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-slate-950">
-              Get <span className="gemini-gradient-text drop-shadow-sm">Google AI Pro</span> For 18 Months on Your Own Account
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+              <span className="dynamic-invert-title">Get </span>
+              <span className="dynamic-invert-gemini">Google AI Pro</span>{' '}
+              <span className="dynamic-invert-title">For 18 Months on Your Own Account</span>
             </h1>
 
             {/* Sub-headline */}
-            <p className="text-base sm:text-lg text-slate-800 max-w-2xl leading-relaxed font-medium">
-              Activate the official <strong className="text-slate-950 font-bold">Google AI Pro</strong> plan directly on your personal Google email with a single official link. Includes <strong className="text-slate-950 font-bold">Gemini Advanced (4x higher limits)</strong>, <strong className="text-slate-950 font-bold">Deep Research & Agentic AI</strong>, <strong className="text-slate-950 font-bold">5TB Google One Cloud Storage</strong>, <strong className="text-slate-950 font-bold">Google Vids & Workspace AI</strong>, and <strong className="text-slate-950 font-bold">Creative Studio Flow credits</strong>.
+            <p className="text-base sm:text-lg max-w-2xl leading-relaxed font-semibold dynamic-invert-sub">
+              Activate the official Google AI Pro plan directly on your personal Google email with a single official link. Includes Gemini Advanced (4x higher limits), Deep Research & Agentic AI, 5TB Google One Cloud Storage, Google Vids & Workspace AI, and Creative Studio Flow credits.
             </p>
 
             {/* Quick Benefits Bullet Points */}
