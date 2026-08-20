@@ -131,7 +131,7 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
 
           {/* Right Column: Holographic Animated GIF Showcase */}
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-5 relative w-full max-w-full">
             
             {/* Futuristic glowing backdrop */}
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 via-purple-600/30 to-pink-600/30 rounded-3xl blur-2xl transform -rotate-1 scale-95 opacity-70"></div>

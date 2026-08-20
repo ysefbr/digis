@@ -5,6 +5,8 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
+  userScalable: false,
+  viewportFit: 'cover',
   themeColor: '#050714',
 };
 
@@ -30,11 +32,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
-      <body className="bg-[#050714] text-slate-100 antialiased min-h-screen flex flex-col relative selection:bg-purple-600 selection:text-white pb-20 md:pb-0 overflow-x-hidden">
-        <div className="cosmic-orb-1"></div>
-        <div className="cosmic-orb-2"></div>
-        <div className="cosmic-orb-3"></div>
+    <html lang="en" className="dark scroll-smooth w-full overflow-x-hidden">
+      <body className="bg-[#050714] text-slate-100 antialiased min-h-screen flex flex-col relative selection:bg-purple-600 selection:text-white pb-20 md:pb-0 w-full overflow-x-hidden">
+        {/* Background ambient glowing orbs contained strictly within viewport */}
+        <div className="fixed inset-0 overflow-hidden pointer-events-none z-0 max-w-full">
+          <div className="cosmic-orb-1"></div>
+          <div className="cosmic-orb-2"></div>
+          <div className="cosmic-orb-3"></div>
+        </div>
         <main className="flex-grow relative z-10 w-full overflow-x-hidden">{children}</main>
       </body>
     </html>

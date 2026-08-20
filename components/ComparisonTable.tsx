@@ -33,7 +33,7 @@ export const ComparisonTable: React.FC<ComparisonTableProps> = ({ price, onOpenC
         </div>
 
         {/* Comparison Table Container */}
-        <div className="overflow-x-auto rounded-3xl border border-blue-900/40 glass-panel shadow-2xl -mx-2 sm:mx-0">
+        <div className="overflow-x-auto rounded-2xl sm:rounded-3xl border border-blue-900/40 glass-panel shadow-2xl w-full max-w-full">
           <table className="w-full text-left border-collapse min-w-[680px]">
             <thead>
               <tr className="border-b border-slate-800 bg-slate-950/70">
